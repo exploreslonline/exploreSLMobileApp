@@ -80,10 +80,7 @@ const LocationScreen: React.FC = () => {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [navigationSteps, setNavigationSteps] = useState<any[]>([]);
 
-  // Google Places API Key (Replace with your actual API key)
-  const GOOGLE_PLACES_API_KEY = 'AIzaSyArCHsyFiAhe2Nvj113V99-Sx2uKNCGBp8';
 
-  // Filter options
   const filterOptions: FilterOption[] = [
     {
       id: 'all',
@@ -397,7 +394,7 @@ const LocationScreen: React.FC = () => {
       const types = 'restaurant|cafe|tourist_attraction|hospital|bank|gas_station|shopping_mall|lodging|store|pharmacy|atm|museum|park|bakery';
 
       const response = await fetch(
-        `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latitude},${longitude}&radius=${radius}&type=${types}&key=${GOOGLE_PLACES_API_KEY}`
+        `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latitude},${longitude}&radius=${radius}&type=${types}&key=${process.env.GOOGLE_PLACES_API_KEY}`
       );
 
       const data = await response.json();
@@ -438,7 +435,7 @@ const LocationScreen: React.FC = () => {
       const dest = `${destination.geometry.location.lat},${destination.geometry.location.lng}`;
 
       const response = await fetch(
-        `https://maps.googleapis.com/maps/api/directions/json?origin=${origin}&destination=${dest}&mode=${travelMode}&key=${GOOGLE_PLACES_API_KEY}`
+        `https://maps.googleapis.com/maps/api/directions/json?origin=${origin}&destination=${dest}&mode=${travelMode}&key=${process.env.GOOGLE_PLACES_API_KEY}`
       );
 
       const data = await response.json();
