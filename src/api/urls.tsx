@@ -1,0 +1,10 @@
+export const VISA_URL = process.env.BACKEND_URL + '/api/visa';
+export const SEARCH_URL = process.env.BACKEND_URL + '/search';
+export const TRANSPORT_URL = process.env.BACKEND_URL + '/api/transport';
+export const HISTORICAL_PLACES_URL = process.env.BACKEND_URL + '/api/historical-places';
+export const TOP_PLACES_URL = process.env.BACKEND_URL + '/api/top-places';
+export const TOP_BEACHES_URL = process.env.BACKEND_URL + '/api/top-beaches';
+export const BROADBAND_URL = process.env.BACKEND_URL + '/api/broadband';
+export const LIVING_COST_URL = process.env.BACKEND_URL + '/api/living-cost';
+export const DIALOG_URL = process.env.BACKEND_URL + '/api/packages/dialog';
+export const MOBITEL_URL = process.env.BACKEND_URL + '/api/packages/mobitel';
