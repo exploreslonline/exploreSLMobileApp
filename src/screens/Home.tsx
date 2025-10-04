@@ -28,8 +28,8 @@ const Home: React.FC = () => {
       selector: '.visa-info' 
     },
     { 
-      title: 'Best time to visit', 
-      subtitle: 'Plan perfect timing',
+      title: 'Offers', 
+      subtitle: 'New Offers',
       icon: '📅',
       selector: '.weather-info' 
     },

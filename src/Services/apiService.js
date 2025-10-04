@@ -4,7 +4,7 @@ class ApiService {
   constructor() {
     // Updated to match your FastAPI server on port 8000
     this.BACKEND_URL = __DEV__ 
-      ? 'http://10.0.2.2:8000'  // For Android emulator - CHANGED FROM 5000 to 8000
+      ? 'http://10.0.2.2:8080'  // For Android emulator - CHANGED FROM 5000 to 8000
       : 'http://127.0.0.1:8000';  // For physical device - CHANGED FROM 5000 to 8000
     
     // Alternative URLs to try if the above doesn't work:

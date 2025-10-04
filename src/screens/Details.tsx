@@ -79,7 +79,7 @@ const Details: React.FC = () => {
       Content = <CostOfLiving />;
       break;
     case '.bookings-info':
-      Content = <AllOffersScreen/>
+      Content = <Text>Hotels and resots</Text>;
       break;
     default:
       Content = <Text>No information available.</Text>;

@@ -173,7 +173,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: colors.beachBlue,
     maxHeight: 250,
-    zIndex:200
+    zIndex:22200
   },
   resultItem: {
     paddingVertical: 8,
