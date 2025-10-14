@@ -50,7 +50,7 @@ const Details: React.FC = () => {
     case '.currency-info':
       Content = <Text>Currency exchange information content goes here.</Text>;
       break;
-    case '.weather-info':
+    case '.offer-info':
       Content = <AllOffersScreen/>;
       break;
     case '.emergency-info':
